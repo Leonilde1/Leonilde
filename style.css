@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #fafafa;
+  color: #333;
+}
+
+header {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  padding: 10px 20px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+}
+
+nav a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.hero {
+  background: url('images/prod1.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.info {
+  padding: 15px;
+}
+
+.price {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.btn.primary {
+  background: #0070ba;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.pill {
+  margin-left: 10px;
+  background: #eee;
+  padding: 8px 12px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #333;
+}
