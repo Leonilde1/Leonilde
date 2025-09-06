@@ -53,11 +53,22 @@ nav a {
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
-.card img {
+/* 📌 Media wrapper con proporzioni uniformi */
+.card .media {
   width: 100%;
-  height: auto;
+  aspect-ratio: 4/5; /* proporzione tipo prodotto (più verticale) */
+  overflow: hidden;
+}
+
+.card .media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* taglia senza deformare */
+  display: block;
 }
 
 .info {
@@ -85,3 +96,17 @@ nav a {
   text-decoration: none;
   color: #333;
 }
+
+/* 📱 Responsive migliore */
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 per riga su tablet */
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr; /* 1 per riga su smartphone */
+  }
+}
+
